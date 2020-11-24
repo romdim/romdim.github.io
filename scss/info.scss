@@ -1,6 +1,6 @@
 .info {
   position: relative;
-  left: 50%;
+  left: calc(50% - 1.75rem);
   transform: translateX(-50%);
 
   padding: 1.875rem;

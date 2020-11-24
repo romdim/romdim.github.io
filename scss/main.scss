@@ -51,6 +51,10 @@ body {
 .columns {
   margin: 0;
   margin-bottom: 0 !important;
+  
+  .column {
+    padding: 0;
+  }
 }
 
 // Index page
@@ -63,7 +67,7 @@ body {
   color: #000;
 
   font-size: 1.75rem;
-  line-height: 3.75rem;
+  line-height: 4.375rem;
 }
 
 .hl {
@@ -123,8 +127,7 @@ body {
   @extend .cursive;
 
   margin-top: 5rem;
-  // border-bottom: solid 1px black;
-  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
 
   color: #000;
 
@@ -138,7 +141,7 @@ body {
 .footer {
   @extend .cursive;
 
-  margin-top: 10rem;
+  margin-top: 7.5rem;
   padding: 3.25rem 0;
 
   background: none;

@@ -1,9 +1,5 @@
 .company {
-  margin-top: calc(6.25rem + 38px);
-
-  .columns .column {
-    padding: 0;
-  }
+  margin-top: 6.25rem;
 
   .media {
     @extend .is-relative;

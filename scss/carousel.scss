@@ -9,17 +9,19 @@
 }
 
 .carousel {
+  position: relative;
   &__nav {
     position: absolute;
-    top: -38px;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
     .previous, .next {
       position: relative;
-      width: 17px;
-      height: 30px;
+      width: 2.5rem;
+      height: 2.5rem;
       label {
-        padding-left: 17px;
-        height: 30px;
+        width: 2.5rem;
+        height: 2.5rem;
         position: absolute;
         right: 0;
         top: 0;
@@ -28,18 +30,23 @@
       }
     }
     .previous > label {
-      background: url('../img/nav/chevron-left.svg') no-repeat;
+      background: url('../img/nav/chevron-up.svg') no-repeat;
+      background-size: cover;
     }
     .next > label {
-      background: url('../img/nav/chevron-right.svg') no-repeat;
+      background: url('../img/nav/chevron-down.svg') no-repeat;
+      background-size: cover;
     }
     .dots {
-      margin: 0 0.5rem;
+      width: 2.5rem;
       label {
-        padding-left: 1rem;
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
         background: url('../img/nav/dot.svg') no-repeat;
+        background-size: cover;
         cursor: pointer;
-        margin: 0 0.25rem;
+        margin: 0.625rem auto;
       }
     }
   }
@@ -107,6 +114,7 @@
                 label {
                   &:nth-child(#{$i}) {
                     background: url('../img/nav/dot-selected.svg') no-repeat;
+                    background-size: cover;
                   }
                 }
               }
@@ -120,7 +128,7 @@
       margin: 0;
       padding: 0;
       list-style-type: none;
-      width: 100%;
+      width: calc(100% - 3.5rem);
       height: calc(min(2000px, 100vw) * #{$columns}/12 * 9/16);
       position: relative;
     }
