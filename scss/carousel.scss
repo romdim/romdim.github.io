@@ -1,0 +1,156 @@
+%invisible {
+  opacity: 0;
+  z-index: auto;
+}
+
+ %visible {
+  opacity: 1 !important;
+  z-index: 1;
+}
+
+.carousel {
+  &__nav {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    .previous, .next {
+      position: relative;
+      width: 17px;
+      height: 30px;
+      label {
+        padding-left: 17px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        @extend %invisible;
+      }
+    }
+    .previous > label {
+      background: url('../img/nav/chevron-left.svg') no-repeat;
+    }
+    .next > label {
+      background: url('../img/nav/chevron-right.svg') no-repeat;
+    }
+    .dots {
+      margin: 0 0.5rem;
+      label {
+        padding-left: 1rem;
+        background: url('../img/nav/dot.svg') no-repeat;
+        cursor: pointer;
+        margin: 0 0.25rem;
+      }
+    }
+  }
+}
+
+@mixin carousel($items, $columns, $animation: 'default') {
+  .carousel {
+    width: 100%;
+
+    > input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @extend %invisible;
+
+      &:checked {
+        ~ .carousel__items .carousel__item,
+        ~ .carousel__nav > .previous > label,
+        ~ .carousel__nav > .next > label {
+          @extend %invisible;
+        }
+      }
+
+      @for $i from 1 through $items {
+        &:nth-child(#{$i}) {
+          &:checked {
+            ~ .carousel__items .carousel__item {
+              @if $animation == 'default' {
+                &:nth-child(#{$i}) {
+                  @extend %visible;
+                }
+              }
+            }
+
+            ~ .carousel__nav {
+              .previous {
+                label {
+                  @if $i == 1 {
+                    &:nth-child(#{$items}) {
+                      @extend %visible;
+                    }
+                  } @else {
+                    &:nth-child(#{$i - 1}) {
+                      @extend %visible;
+                    }
+                  }
+                }
+              }
+
+              .next {
+                label {
+                  @if $i == $items {
+                    &:nth-child(1) {
+                      @extend %visible;
+                    }
+                  } @else {
+                    &:nth-child(#{$i + 1}) {
+                      @extend %visible;
+                    }
+                  }
+                }
+              }
+
+              .dots {
+                label {
+                  &:nth-child(#{$i}) {
+                    background: url('../img/nav/dot-selected.svg') no-repeat;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__items {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      width: 100%;
+      height: calc(min(2000px, 100vw) * #{$columns}/12 * 9/16);
+      position: relative;
+    }
+
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: opacity 1s;
+      -webkit-transition: opacity 1s;
+
+      * {
+        height: 100%;
+      }
+
+      .logo-bg {
+        padding-top: 56.25%;
+      }
+
+      .svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+}
