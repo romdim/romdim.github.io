@@ -1,12 +1,16 @@
 .hand-right {
-  &:hover,
-  &:active {
-    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
-  }
-  &:active {
-    g {
-      stroke-width: 4;
+  width: 16%;
+  
+  svg {
+    &:hover,
+    &:active {
+      -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+      filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .3));
+    }
+    &:active {
+      g {
+        stroke-width: 4;
+      }
     }
   }
 }

@@ -12,7 +12,6 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translateY(-100%);
       
       display: flex;
       justify-content: center;
@@ -20,7 +19,7 @@
 
       padding: 4px 12px;
 
-      border-radius: 5px 5px 0 0;
+      border-radius: 20px 20px 0 0;
       
       width: 10rem;
       height: 3.25rem;
@@ -31,7 +30,11 @@
     }
     
     &.employer + label {
-      transform: translate(-100%, -100%);
+      transform: translate(-95%, -100%);
+    }
+    
+    &.role + label {
+      transform: translate(-5%, -100%);
     }
 
     &:not(:checked) + label {
@@ -41,6 +44,13 @@
     &:checked + label {
       background: #FFF;
       color: #000;
+      $border: 1px solid #e7e7e7;
+      // border: $border;
+      border-top: $border;
+      border-right: $border;
+      border-left: $border;
+      z-index: 10;
+      // top: 1px;
     }
 
     &.employer:checked ~ .tab.employer,
