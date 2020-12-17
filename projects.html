@@ -20,62 +20,65 @@
     <link rel="manifest" href="site.webmanifest">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
-    <link rel="stylesheet" href="scss/main.scss">
+    <!-- <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="scss/main.scss"> -->
+    <link rel="stylesheet" href="css/main.scss">
 
     <meta name="theme-color" content="#fff">
   </head>
-  <body>
-    <div id="top"></div>
-    <header class="columns is-vcentered header">
-      <a class="column is-2" href="/">
+  <body class="w-screen max-w-screen-3xl m-auto font-mono">
+    <div id="top" class="absolute top-0"></div>
+    <header class="mt-20 mb-5 grid grid-cols-12 flex place-items-center">
+      <a class="col-span-2" href="/">
         <img src="img/logo.svg" alt="" uk-svg width="70%">
       </a>
-      <div class="column is-8 has-text-centered">
-        Romanos Tsouroplis<br /><br />Full Stack Engineer / Consultant
+      <div class="col-span-8 font-cursive text-center text-black">
+        <h1 class="text-2xl mb-10">Romanos Tsouroplis</h1>
+        <h1 class="text-2xl">Full Stack Engineer / Consultant</h1>
       </div>
-      <div class="column is-offset-1 is-1">
+      <div class="col-span-1"></div>
+      <div class="col-span-1">
         <svg width="100%" viewBox="0 0 235 179" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="30" cy="30" r="30"/></defs><a xlink:href="https://linkedin.com/in/romdim" target="_blank" rel="noopener noreferrer"><g transform="translate(0 119)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#000" xlink:href="#a"/><circle fill="#FFF" mask="url(#b)" cx="30.6977" cy="27.907" r="22.3256"/><g mask="url(#b)"><path d="M50.6134 4.186H11.029c-2.162 0-4.0524 1.5567-4.0524 3.694V47.551c0 2.1497 1.8903 4.0647 4.0524 4.0647h39.572c2.1743 0 3.8051-1.9274 3.8051-4.0647V7.88c.0124-2.1374-1.6308-3.694-3.7928-3.694zM21.6788 43.721h-6.795V22.5944h6.795v21.1264zM18.516 19.3822h-.0494c-2.1744 0-3.5829-1.6185-3.5829-3.6447 0-2.0632 1.4455-3.6446 3.6694-3.6446 2.2238 0 3.5828 1.569 3.6322 3.6446 0 2.0262-1.4084 3.6447-3.6693 3.6447zm27.9956 24.3386h-6.795V32.1693c0-2.7674-.9884-4.6577-3.447-4.6577-1.8779 0-2.9898 1.2726-3.484 2.508-.1853.4448-.2347 1.0502-.2347 1.6679v12.0334h-6.795V22.5945h6.795v2.9404c.9883-1.4084 2.5327-3.4346 6.1279-3.4346 4.46 0 7.8328 2.9404 7.8328 9.2783V43.721z" fill="#000" fill-rule="nonzero"/></g></g></a><a xlink:href="mailto:rom-dim@hotmail.com?subject=Coming%20from%20site" target="_blank" rel="noopener noreferrer"><g transform="translate(175 119)"><use fill="#000" xlink:href="#a"/><path d="M44.1195 18.1395h-28.239c-1.8274 0-3.3224 1.3699-3.3224 3.0445v19.0274c0 1.6746 1.495 3.0444 3.3224 3.0444h28.239c1.8274 0 3.3224-1.3698 3.3224-3.0444V21.184c0-1.6746-1.495-3.0445-3.3224-3.0445zm.5317 7.1628l-13.9535 8.186-13.9535-8.186v-2.9767l13.9535 8.186 13.9535-8.186v2.9767z" fill="#fff" fill-rule="nonzero"/></g></a><a xlink:href="https://github.com/romdim" target="_blank" rel="noopener noreferrer"><use fill="#fff" xlink:href="#a" transform="translate(88 1)"/><path d="M118 0c-16.5753 0-30 13.6276-30 30.4536 0 14.3118 9.674 26.19 22.726 29.5386-.1507-.381-.2247-.9149-.2247-1.4462v-5.1784h-3.7507c-2.0246 0-3.9012-.9123-4.726-2.5892-.9752-1.8272-1.1259-4.6445-3.6-6.3965-.7506-.6091-.1506-1.2182.6741-1.143 1.5753.4561 2.8494 1.524 4.0494 3.1205 1.2 1.5991 1.726 1.9801 3.9753 1.9801 1.0494 0 2.6987-.0751 4.2-.3058.8247-2.133 2.2494-4.0354 3.9753-4.9477-10.0493-1.2182-14.8493-6.2437-14.8493-13.0964 0-2.9702 1.274-5.7874 3.3753-8.2237-.674-2.3611-1.5753-7.2337.3013-9.136 4.5012 0 7.2 2.9701 7.874 3.7295 2.2494-.762 4.726-1.2181 7.274-1.2181 2.6247 0 5.0247.4561 7.274 1.2181.6741-.762 3.3754-3.7296 7.8741-3.7296 1.8 1.8272.9753 6.775.2247 9.136 2.1013 2.3612 3.3013 5.2536 3.3013 8.2238 0 6.8527-4.726 11.8782-14.6987 12.9434 2.7753 1.4463 4.726 5.5568 4.726 8.6022v6.9356c0 .2281-.0741.4562-.0741.6843C139.6 55.0445 148 43.778 148 30.4536 148 13.6276 134.5753 0 118 0z" fill="#000"/></a></svg>
       </div>
     </header>
 
     <section>
-      <div class="columns is-multiline">
-        <div class="company company-artwishlist column is-offset-1 is-10">
-          <div class="media">
-            <div class="carousel">
-              <input type="radio" id="artwishlist-1" name="artwishlist[]" checked>
-              <input type="radio" id="artwishlist-2" name="artwishlist[]">
-              <input type="radio" id="artwishlist-3" name="artwishlist[]">
-              <input type="radio" id="artwishlist-4" name="artwishlist[]">
-              <ul class="carousel__items">
-                <li class="carousel__item">
-                    <div class="logo-bg"></div>
-                    <img class="svg" src="img/companies/Artwishlist/Artwishlist.svg" alt="">
+      <div class="grid grid-cols-12">
+        <div class="col-start-2 col-span-10 mt-25 company company-artwishlist">
+          <div class="relative media">
+            <div class="relative w-full carousel">
+              <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="artwishlist-1" name="artwishlist[]" checked>
+              <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="artwishlist-2" name="artwishlist[]">
+              <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="artwishlist-3" name="artwishlist[]">
+              <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="artwishlist-4" name="artwishlist[]">
+              <ul class="carousel__items relative m-0 p-0 list-none aspect-w-16 aspect-h-9">
+                <li class="relative opacity-0 z-auto carousel__item">
+                    <div class="aspect-w-16 aspect-h-9 bg-artwishlist"></div>
+                    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 h-auto" src="img/companies/Artwishlist/Artwishlist.svg" alt="">
                 </li>
-                <li class="carousel__item">
+                <li class="opacity-0 z-auto carousel__item">
                   <video width="100%" controls muted="true">
                     <source src="img/companies/Artwishlist/Artwishlist.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </li>
-                <li class="carousel__item"><img src="img/companies/Artwishlist/Artwishlist-Database.png" alt=""></li>
-                <li class="carousel__item"><img src="img/companies/Artwishlist/Artwishlist-Glass.png" alt=""></li>
+                <li class="opacity-0 z-auto carousel__item"><img src="img/companies/Artwishlist/Artwishlist-Database.png" alt=""></li>
+                <li class="opacity-0 z-auto carousel__item"><img src="img/companies/Artwishlist/Artwishlist-Glass.png" alt=""></li>
               </ul>
-              <div class="carousel__nav">
-                <div class="previous">
+              <div class="z-auto absolute top-1/2 right-0 transform -translate-y-1/2 carousel__nav">
+                <div class="relative w-10 h-10 previous">
                   <label for="artwishlist-1"></label>
                   <label for="artwishlist-2"></label>
                   <label for="artwishlist-3"></label>
                   <label for="artwishlist-4"></label>
                 </div>
-                <div class="dots">
+                <div class="w-10 dots">
                   <label for="artwishlist-1"></label>
                   <label for="artwishlist-2"></label>
                   <label for="artwishlist-3"></label>
                   <label for="artwishlist-4"></label>
                 </div>
-                <div class="next">
+                <div class="relative w-10 h-10 next">
                   <label for="artwishlist-1"></label>
                   <label for="artwishlist-2"></label>
                   <label for="artwishlist-3"></label>
@@ -84,47 +87,47 @@
               </div>
             </div>
           </div>
-          <div class="info">
-            <input type="radio" name="art-tabs" id="art-employer" class="employer" checked />
-            <label for="art-employer">Employer</label>
+          <div class="relative center-of-media transform -translate-x-1/2 p-7.5 font-mono z-10 shadow-xl max-w-full text-lg info">
+            <input class="hidden input-employer" type="radio" name="art-tabs" id="art-employer" checked />
+            <label class="absolute top-0 left-1/2 w-40 h-13 py-1 px-3 bg-black text-white text-xl rounded-t-2.5xl transform -translate-x-full -translate-x-1/20 -translate-y-full flex items-center justify-center" for="art-employer">Employer</label>
   
-            <input type="radio" name="art-tabs" id="art-role" class="role" />
-            <label for="art-role">Role</label>
+            <input class="hidden input-role" type="radio" name="art-tabs" id="art-role" />
+            <label class="absolute top-0 left-1/2 w-40 h-13 py-1 px-3 bg-black text-white text-xl rounded-t-2.5xl transform -translate-x-19/20 -translate-y-full flex items-center justify-center" for="art-role">Role</label>
   
-            <div class="tab employer">
-              <p class="has-text-justified">Artwishlist unifies the art market by facilitating dealers, advisors & collectors matchmaking through its Introductions Platform. It relies on the Provenance Database which contains details for over 10 million artworks which can be researched online or through Glass, Artwishlist's chat bot image recognition service.</p>
-              <div class="level level-right tools">
-                <img src="img/tools/Ruby.svg" alt="Ruby" title="Ruby">
-                <img src="img/tools/Rails.svg" alt="Rails" title="Rails">
-                <img src="img/tools/Sass.svg" alt="Sass" title="Sass">
-                <img src="img/tools/Angular.svg" alt="Angular" title="Angular">
-                <img src="img/tools/Docker.svg" alt="Docker" title="Docker">
-                <img src="img/tools/Kubernetes.svg" alt="Kubernetes" title="Kubernetes">
-                <img src="img/tools/Github.svg" alt="Github" title="Github">
-                <img src="img/tools/Elasticsearch.svg" alt="Elasticsearch" title="Elasticsearch">
-                <img src="img/tools/Redis.svg" alt="Redis" title="Redis">
-                <img src="img/tools/Postgresql.svg" alt="Postgresql" title="Postgresql">
+            <div class="hidden tab-employer">
+              <p class="text-justify">Artwishlist unifies the art market by facilitating dealers, advisors & collectors matchmaking through its Introductions Platform. It relies on the Provenance Database which contains details for over 10 million artworks which can be researched online or through Glass, Artwishlist's chat bot image recognition service.</p>
+              <div class="flex flex-row-reverse mt-8 w-100 space-x-5 space-x-reverse tools">
+                <img class="h-5" src="img/tools/Ruby.svg" alt="Ruby" title="Ruby">
+                <img class="h-5" src="img/tools/Rails.svg" alt="Rails" title="Rails">
+                <img class="h-5" src="img/tools/Sass.svg" alt="Sass" title="Sass">
+                <img class="h-5" src="img/tools/Angular.svg" alt="Angular" title="Angular">
+                <img class="h-5" src="img/tools/Docker.svg" alt="Docker" title="Docker">
+                <img class="h-5" src="img/tools/Kubernetes.svg" alt="Kubernetes" title="Kubernetes">
+                <img class="h-5" src="img/tools/Github.svg" alt="Github" title="Github">
+                <img class="h-5" src="img/tools/Elasticsearch.svg" alt="Elasticsearch" title="Elasticsearch">
+                <img class="h-5" src="img/tools/Redis.svg" alt="Redis" title="Redis">
+                <img class="h-5" src="img/tools/Postgresql.svg" alt="Postgresql" title="Postgresql">
               </div>
             </div>
-            <div class="tab role">
-              <p class="has-text-justified">Working as a CTO in a small-scale startup means wearing many hats. Apart from managing the tech team & shaping the product roadmap alongside the stakeholders, part of the job was to delve deep into back/front-end, scripting & devops, using a wide range of tools, languages & frameworks. Taking critical decisions at hand resulted in a failsafe tech system design based on a microservices architecture.</p>
-              <div class="level level-right tools">
-                <img src="img/tools/Ruby.svg" alt="Ruby" title="Ruby">
-                <img src="img/tools/Rails.svg" alt="Rails" title="Rails">
-                <img src="img/tools/Sass.svg" alt="Sass" title="Sass">
-                <img src="img/tools/Angular.svg" alt="Angular" title="Angular">
-                <img src="img/tools/Docker.svg" alt="Docker" title="Docker">
-                <img src="img/tools/Kubernetes.svg" alt="Kubernetes" title="Kubernetes">
-                <img src="img/tools/Github.svg" alt="Github" title="Github">
-                <img src="img/tools/Elasticsearch.svg" alt="Elasticsearch" title="Elasticsearch">
-                <img src="img/tools/Redis.svg" alt="Redis" title="Redis">
-                <img src="img/tools/Postgresql.svg" alt="Postgresql" title="Postgresql">
+            <div class="hidden tab-role">
+              <p class="text-justify">Working as a CTO in a small-scale startup means wearing many hats. Apart from managing the tech team & shaping the product roadmap alongside the stakeholders, part of the job was to delve deep into back/front-end, scripting & devops, using a wide range of tools, languages & frameworks. Taking critical decisions at hand resulted in a failsafe tech system design based on a microservices architecture.</p>
+              <div class="flex flex-row-reverse mt-8 w-100 space-x-5 space-x-reverse tools">
+                <img class="h-5" src="img/tools/Ruby.svg" alt="Ruby" title="Ruby">
+                <img class="h-5" src="img/tools/Rails.svg" alt="Rails" title="Rails">
+                <img class="h-5" src="img/tools/Sass.svg" alt="Sass" title="Sass">
+                <img class="h-5" src="img/tools/Angular.svg" alt="Angular" title="Angular">
+                <img class="h-5" src="img/tools/Docker.svg" alt="Docker" title="Docker">
+                <img class="h-5" src="img/tools/Kubernetes.svg" alt="Kubernetes" title="Kubernetes">
+                <img class="h-5" src="img/tools/Github.svg" alt="Github" title="Github">
+                <img class="h-5" src="img/tools/Elasticsearch.svg" alt="Elasticsearch" title="Elasticsearch">
+                <img class="h-5" src="img/tools/Redis.svg" alt="Redis" title="Redis">
+                <img class="h-5" src="img/tools/Postgresql.svg" alt="Postgresql" title="Postgresql">
               </div>
             </div>
           </div>
         </div>
 
-        <div class="company company-myTomorrows column is-offset-6 is-6">
+        <div class="col-start-7 col-span-6 company company-myTomorrows">
           <div class="media">
             <div class="carousel">
             <input type="radio" id="myTomorrows-1" name="myTomorrows[]" checked>
@@ -132,7 +135,7 @@
             <input type="radio" id="myTomorrows-3" name="myTomorrows[]">
             <ul class="carousel__items">
               <li class="carousel__item">
-                <div class="logo-bg"></div>
+                <div class="bg-myTomorrows"></div>
                 <img class="svg" src="img/companies/myTomorrows/MyTomorrows.svg" alt="">
               </li>
               <li class="carousel__item"><img src="img/companies/myTomorrows/myTomorrows.png" alt=""></li>
@@ -191,7 +194,7 @@
           </div>
         </div>
 
-        <div class="company company-mobiquity column is-8">
+        <div class="col-start-1 col-span-8 company company-mobiquity">
           <div class="media">
             <div class="carousel">
               <input type="radio" id="mobiquity-1" name="mobiquity[]" checked>
@@ -199,7 +202,7 @@
               <input type="radio" id="mobiquity-3" name="mobiquity[]">
               <ul class="carousel__items">
                 <li class="carousel__item">
-                  <div class="logo-bg"></div>
+                  <div class="bg-mobiquity"></div>
                   <img class="svg" src="img/companies/Mobiquity/Mobiquity.svg" alt="">
                 </li>
                 <li class="carousel__item"><img src="img/companies/Mobiquity/Mobiquity-BPI.png" alt=""></li>
@@ -266,14 +269,14 @@
           </div>
         </div>
 
-        <div class="company company-peopleperhour column is-offset-5 is-6">
+        <div class="col-start-6 col-span-6 company company-peopleperhour">
           <div class="media">
             <div class="carousel">
               <input type="radio" id="pph-1" name="pph[]" checked>
               <input type="radio" id="pph-2" name="pph[]">
               <ul class="carousel__items">
                 <li class="carousel__item">
-                  <div class="logo-bg"></div>
+                  <div class="bg-peopleperhour"></div>
                   <img class="svg" src="img/companies/PeoplePerHour/PeoplePerHour.svg" alt="PeoplePerHour Logo">
                 </li>
                 <li class="carousel__item">
@@ -328,7 +331,7 @@
           </div>
         </div>
 
-        <div class="company company-epu column is-offset-2 is-8">
+        <div class="col-start-2 col-span-8 company company-epu">
           <div class="media">
             <div class="carousel">
               <input type="radio" id="epu-1" name="epu[]" checked>
@@ -338,7 +341,7 @@
               <input type="radio" id="epu-5" name="epu[]">
               <ul class="carousel__items">
                 <li class="carousel__item">
-                  <div class="logo-bg"></div>
+                  <div class="bg-epu border border-solid border-epu-secondary"></div>
                   <img class="svg" src="img/companies/EPU/EPU.png" alt="">
                 </li>
                 <li class="carousel__item"><img src="img/companies/EPU/EPU-NTUA-Cloudteams.png" alt=""></li>

@@ -1,0 +1,111 @@
+/* Carousel */
+@mixin carousel($items, $columns, $animation: 'default') {
+  .carousel > input {
+    @for $i from 1 through $items {
+      &:nth-child(#{$i}) {
+        &:checked {
+          ~ .carousel__items .carousel__item {
+            @if $animation == 'default' {
+              &:nth-child(#{$i}) {
+                @apply opacity-100 z-10;
+              }
+            }
+          }
+
+          ~ .carousel__nav {
+            .previous {
+              label {
+                @if $i == 1 {
+                  &:nth-child(#{$items}) {
+                    @apply opacity-100 z-10;
+                  }
+                } @else {
+                  &:nth-child(#{$i - 1}) {
+                    @apply opacity-100 z-10;
+                  }
+                }
+              }
+            }
+
+            .next {
+              label {
+                @if $i == $items {
+                  &:nth-child(1) {
+                    @apply opacity-100 z-10;
+                  }
+                } @else {
+                  &:nth-child(#{$i + 1}) {
+                    @apply opacity-100 z-10;
+                  }
+                }
+              }
+            }
+
+            .dots {
+              label {
+                &:nth-child(#{$i}) {
+                  background: url('../img/nav/dot-selected.svg') no-repeat;
+                  background-size: cover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel__items {
+  width: calc(100% - 3.5rem);
+}
+.carousel__item {
+  // @apply absolute top-0 left-0 w-full h-full;
+  @apply transition duration-1000 transition-opacity;
+
+  // * {
+  //   @apply h-full;
+  // }
+}
+
+.previous label,
+.next label {
+  @apply absolute top-0 right-0 opacity-0 z-auto w-10 h-10 cursor-pointer  bg-cover bg-no-repeat;
+}
+
+.previous label {
+  @apply bg-chevron-up;
+}
+
+.dots label {
+  @apply block w-5 h-5 bg-dot bg-no-repeat bg-cover cursor-pointer my-2.5 mx-auto;
+}
+
+.next label {
+  @apply bg-chevron-down;
+}
+
+/* Company */
+.company-artwishlist {
+  .media {
+    @include carousel(4, 10);
+  }
+}
+
+/* Info box */
+.info {
+  width: 764px;
+
+  input:not(:checked) + label {
+    @apply cursor-pointer;
+  }
+  
+  input:checked + label {
+    @apply z-10 bg-white text-black;// border-gray-200 border-solid border border-b-0 ;
+  }
+}
+
+.input-employer:checked ~ .tab-employer,
+.input-role:checked ~ .tab-role {
+  @apply block;
+}
