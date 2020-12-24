@@ -1,14 +1,15 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [
-    '*.html'
-  ],
+  purge: ["./src/**/*.svelte"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     aspectRatio: {
       9: '9',
       16: '16',
+    },
+    borderRadius: {
+      '2.5xl': '1.25rem',
     },
     // Default
     // screens: {
@@ -36,7 +37,7 @@ module.exports = {
         'artwishlist': '#F5F5F5',
         'myTomorrows': '#2AA56A',
         'mobiquity': '#00AFEF',
-        'peopleperhour': '#F1F3F8',
+        'peoplePerHour': '#F1F3F8',
         'epu': '#FFFFFF',
         'epu-secondary': '#243370',
       },
@@ -46,6 +47,12 @@ module.exports = {
       },
       fontSize: {
         '2.5xl': '1.75rem',
+      },
+      spacing: {
+        '7.5': '1.875rem',
+        '13': '3.25rem',
+        '25': '6.25rem',
+        '30': '7.5rem',
       },
       screens: {
         '3xl': '2000px',
