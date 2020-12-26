@@ -23,7 +23,7 @@ const onwarn = (warning, onwarn) =>
     /[/\\]@sapper[/\\]/.test(warning.message)) ||
   onwarn(warning);
 
-export default {
+module.exports = {
   client: {
     input: config.client.input().replace(/\.js$/, ".ts"),
     output: config.client.output(),
