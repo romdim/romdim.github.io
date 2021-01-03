@@ -8,8 +8,10 @@
   const companies: CompanyType[] = [
     {
       name: 'artwishlist',
-      start: 2,
-      span: 10,
+      columns: {
+        start: 2,
+        span: 10,
+      },
       carousel: [
         {
           type: 'logo',
@@ -33,8 +35,14 @@
     },
     {
       name: 'myTomorrows',
-      start: 7,
-      span: 6,
+      columns: {
+        start: 6,
+        span: 7,
+        '2xl': {
+          start: 7,
+          span: 6,
+        },
+      },
       carousel: [
         {
           type: 'logo',
@@ -54,8 +62,14 @@
     },
     {
       name: 'mobiquity',
-      start: 1,
-      span: 8,
+      columns: {
+        start: 1,
+        span: 9,
+        '2xl': {
+          start: 1,
+          span: 8,
+        },
+      },
       carousel: [
         {
           type: 'logo',
@@ -76,8 +90,14 @@
     },
     {
       name: 'peoplePerHour',
-      start: 6,
-      span: 6,
+      columns: {
+        start: 6,
+        span: 7,
+        '2xl': {
+          start: 6,
+          span: 6,
+        },
+      },
       carousel: [
         {
           type: 'logo',
@@ -94,8 +114,14 @@
     {
       name: 'epu',
       nameC: 'EPU',
-      start: 2,
-      span: 8,
+      columns: {
+        start: 1,
+        span: 9,
+        '2xl': {
+          start: 2,
+          span: 8,
+        },
+      },
       carousel: [
         {
           type: 'logo',

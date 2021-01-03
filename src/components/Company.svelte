@@ -2,11 +2,11 @@
   import Tools from './Tools.svelte';
 
   import type CarouselItem from '../../typings/Components/CarouselItem';
+  import type Columns from '../../typings/Components/Columns';
 
   export let name: string;
   export let nameC: string = name.charAt(0).toUpperCase() + name.slice(1);
-  export let start: number;
-  export let span: number;
+  export let columns: Columns;
   export let carousel: CarouselItem[];
   export let employerText: string;
   export let roleText: string;
@@ -126,7 +126,7 @@
   }
 </style>
 
-<div class="col-start-{start} col-span-{span} mt-25 company-{name}">
+<div class="{columns['2xl'] ? `2xl:col-start-${columns['2xl'].start} 2xl:col-span-${columns['2xl'].span} ` : '' }md:col-start-{columns.start} md:col-span-{columns.span} col-span-full md:mt-20 2xl:mt-25 company-{name}">
   <div class="relative w-full carousel">
     {#each carousel as _, i}
       <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="{name}-{i}" name="{name}[]" checked={i==0 ? true: false}>

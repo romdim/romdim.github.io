@@ -8,7 +8,7 @@
   }
 </style>
 
-<footer class="relative mt-30 py-13 px-0 bg-none font-cursive text-2xl">
+<footer class="relative mt-25 2xl:mt-30 py-13 px-0 bg-none font-cursive text-2xl">
   <p class="pb-7">KvK-nummer: 75633264</p>
   <p class="pb-7">BTW-nummer: NL860346432B01</p>
   <div class="flex">

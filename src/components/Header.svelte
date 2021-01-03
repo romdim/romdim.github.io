@@ -1,4 +1,4 @@
-<header class="mt-20 mb-5 grid grid-cols-12 flex place-items-center">
+<header class="md:mt-15 2xl:mt-20 mb-5 grid grid-cols-12 flex place-items-center">
   <a class="col-span-2" href="/">
     <img src="img/logo.svg" alt="" uk-svg width="70%">
   </a>
