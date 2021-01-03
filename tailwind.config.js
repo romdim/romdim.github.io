@@ -46,6 +46,7 @@ module.exports = {
         cursive: ['Comfortaa', 'cursive'],
       },
       fontSize: {
+        '2.25xl': '1.625rem',
         '2.5xl': '1.75rem',
       },
       spacing: {

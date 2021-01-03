@@ -8,7 +8,7 @@
   }
 </style>
 
-<footer class="mt-25 2xl:mt-30 2xl:mb-20 py-13 px-0 bg-none font-cursive text-2xl grid grid-cols-12">
+<footer class="mt-25 2xl:mt-30 2xl:mb-20 py-13 grid grid-cols-12 bg-none font-cursive text-xl 2xl:text-2xl">
   <div class="relative col-start-2 3xl:col-start-1 col-span-10 3xl:col-span-12">
     <p class="pb-7">KvK-nummer: 75633264</p>
     <p class="pb-7">BTW-nummer: NL860346432B01</p>
