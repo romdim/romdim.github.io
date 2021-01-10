@@ -84,7 +84,8 @@
           name: 'ABC',
         },
       ],
-      employerText: 'Mobiquity is a global digital consultancy which blends strategy, creativity & engineering in order to guide the world’s leading brands understand & apply with technology in meaningful way.<br />Notable clients are Bayer, Nestle, LeasePlan, Amazon, kpn, BPI, Philips, Rabobank, Novartis.',
+      employerText: `Mobiquity is a global digital consultancy which blends strategy, creativity & engineering in order to guide the world’s leading brands understand & apply with technology in meaningful way.
+      Notable clients are Bayer, Nestle, LeasePlan, Amazon, kpn, BPI, Philips, Rabobank, Novartis.`,
       roleText: 'As a Front-End Lead I took initiatives to improve the organisation\'s workflow. Participated in interviews & guided junior front-enders to develop their skills. Worked in international, agile & multidisciplinary teams towards providing tailored high quality digital solutions.',
       tools: ['AWS', 'Gatsby', 'React', 'Angular', 'Backbase', 'Typescript', 'Javascript', 'Sass', 'Bootstrap']
     },

@@ -182,11 +182,11 @@
     <label class="absolute top-0 left-1/2 w-40 h-13 py-1 px-3 bg-black text-white text-xl rounded-t-2.5xl transform -translate-y-full flex items-center justify-center" for="{name}-role">Role</label>
 
     <div class="hidden tab-employer">
-      <p class="text-justify">{@html employerText}</p>
+      <p class="whitespace-pre-line text-justify">{employerText}</p>
       <Tools tools={tools} />
     </div>
     <div class="hidden tab-role">
-      <p class="text-justify">{@html roleText}</p>
+      <p class="whitespace-pre-line text-justify">{roleText}</p>
       <Tools tools={tools} />
     </div>
   </div>
