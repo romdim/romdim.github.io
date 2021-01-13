@@ -52,6 +52,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "polka": "^0.5.2",
-    "sirv": "^1.0.10"
+    "sirv": "^1.0.10",
+    "tocca": "^2.0.9"
   }
 }

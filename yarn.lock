@@ -3662,6 +3662,11 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
+tocca@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/tocca/-/tocca-2.0.9.tgz#3a8b6c22e2e72a86c44d7f0864554cbc936eb965"
+  integrity sha512-FXofUGAFcgEIEOS3m9Dk9URaY3x+JeerPfVFc8K820PjV0JcCsH98BFxrVOTANC8YvM4QTrmKMol2/818gFmCw==
+
 totalist@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/totalist/-/totalist-1.1.0.tgz#a4d65a3e546517701e3e5c37a47a70ac97fe56df"
