@@ -6,6 +6,7 @@ import svelte from "rollup-plugin-svelte";
 import babel from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
+import svelteSVG from "rollup-plugin-svelte-svg";
 
 import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
@@ -39,6 +40,7 @@ module.exports = {
       }),
       commonjs(),
       typescript(),
+      svelteSVG({ dev }), 
 
       legacy &&
         babel({
@@ -88,6 +90,7 @@ module.exports = {
         "process.browser": false,
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
+      svelteSVG({ generate: "ssr", dev }),
       svelte({
         ...svelteOptions,
         generate: "ssr",
