@@ -168,7 +168,7 @@
   <meta name="description" content="">
 </svelte:head>
 
-<div class="md:px-5 lg:px-0 w-screen max-w-screen-3xl m-auto font-mono">
+<div class="md:px-5 3xl:px-0 w-screen max-w-screen-3xl m-auto font-mono">
   <div id="top" class="absolute top-0"></div>
   <Header />
 
