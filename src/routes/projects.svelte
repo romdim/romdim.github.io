@@ -142,10 +142,10 @@
           type: 'image',
           name: 'NTUA-Optimus',
         },
-        {
-          type: 'image',
-          name: 'NTUA',
-        },
+        // {
+        //   type: 'image',
+        //   name: 'NTUA',
+        // },
       ],
       employerText: 'EPU is a scientific unit which carries out R&D services on a wide range of complex business, societal & technical issues. EPU-NTUA provisions the training of under/post-graduate engineers, runs extensive research & facilitates the authoring of scientific papers. It has partnered with major Greek, European & international organisations.',
       roleText: 'In the position of Researcher & Engineer I started a PhD & published papers regarding the API interconnectivity through a specification. Worked for the public sector in Greece & EU programmes alongside European universities & large companies, under tight deadlines.',
@@ -168,14 +168,14 @@
   <meta name="description" content="">
 </svelte:head>
 
-<div class="w-screen max-w-screen-3xl m-auto font-mono">
+<div class="md:px-5 lg:px-0 w-screen max-w-screen-3xl m-auto font-mono">
   <div id="top" class="absolute top-0"></div>
   <Header />
 
   <section>
     <div class="grid grid-cols-12">
       {#each companies as company}
-        <Company {...company} />
+        <Company {company} />
       {/each}
     </div>
   </section>

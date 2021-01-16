@@ -1,14 +1,10 @@
-import type CarouselItem from './CarouselItem';
+import type CompanyCarousel from './CompanyCarousel';
+import type CompanyInfo from './CompanyInfo';
 import type Columns from './Columns';
 
-type Company = {
-  name: string,
-  nameC?: string,
-  columns: Columns,
-  carousel: CarouselItem[],
-  employerText: string,
-  roleText: string,
-  tools: string[],
-};
+type Company =
+  CompanyCarousel &
+  CompanyInfo &
+  { columns: Columns };
 
 export default Company;
