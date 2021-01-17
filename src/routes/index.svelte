@@ -130,7 +130,7 @@
     </div>
 
     <!-- Description -->
-    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 lg:w-30% lg:bottom-1/4 lg:left-3/4 lg:translate-y-1/2 text-size-responsive text-center lg:text-right text-black">
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 lg:w-37% xl:w-30% lg:bottom-1/4 lg:left-3/4 lg:translate-y-1/2 text-size-responsive text-center lg:text-right text-black">
       <!-- flex items-center -->
       <!-- <div class="lg:mx-auto"> -->
         <p>Manager of One</p>
