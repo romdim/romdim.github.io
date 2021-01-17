@@ -1,7 +1,7 @@
 type Columns = {
   start: number,
   span: number,
-  '2xl'?: {
+  '3xl'?: {
     start: number,
     span: number,
   },

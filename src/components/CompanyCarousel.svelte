@@ -105,7 +105,19 @@
 
   @media (min-width: 1024px) {
     ul {
-      width: calc(100% - 3.5rem);
+      width: calc(100% - 1.875rem);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    ul {
+      width: calc(100% - 2.125rem);
+    }
+  }
+
+  @media (min-width: 1920px) {
+    ul {
+      width: calc(100% - 2.75rem);
     }
   }
   
@@ -160,19 +172,19 @@
   </ul>
 
   <div class="z-10 absolute top-1/2 -right-2 md:-right-2.5 lg:right-0 transform -translate-y-1/2 nav">
-    <div class="relative w-10 h-10 previous hidden lg:block">
+    <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 previous hidden lg:block">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 opacity-0 z-auto w-10 h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 opacity-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
       {/each}
     </div>
-    <div class="w-4 md:w-5 lg:w-10 dots">
+    <div class="w-4 md:w-5 lg:w-7.5 3xl:w-10 lg:-my-2.5 dots">
       {#each carousel as _, i}
-        <label class="block w-4 md:w-5 lg:w-5 h-4 md:h-5 lg:h-5 bg-dot bg-no-repeat bg-cover cursor-pointer my-5 lg:my-2.5 md:mx-auto" for="{name}-{i}"></label>
+        <label class="block w-4 md:w-5 lg:w-4 h-4 md:h-5 lg:h-4 bg-dot bg-no-repeat bg-cover cursor-pointer my-5 lg:my-2.5 md:mx-auto" for="{name}-{i}"></label>
       {/each}
     </div>
-    <div class="relative w-10 h-10 next hidden lg:block">
+    <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 next hidden lg:block">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 opacity-0 z-auto w-10 h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-down" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 opacity-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-down" for="{name}-{i}"></label>
       {/each}
     </div>
   </div>

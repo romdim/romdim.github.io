@@ -38,7 +38,7 @@
       columns: {
         start: 6,
         span: 7,
-        '2xl': {
+        '3xl': {
           start: 7,
           span: 6,
         },
@@ -57,7 +57,7 @@
         },
       ],
       employerText: 'myTomorrows has a mission to provide every patient with earlier and better access to all possible treatment options in development, while enabling pharmaceutical companies to partner with patients in order to facilitate clinical research.',
-      roleText: 'In the role of Full Stack Engineer & Consultant I identified issues, provided recommendations and implemented solutions in-time while also analysed potential bottlenecks and threats in order to create a future-proof platform',
+      roleText: 'In the role of Full Stack Engineer & Consultant I identified issues, provided recommendations and implemented solutions in-time while also analysed potential bottlenecks and threats in order to create a future-proof platform.',
       tools: ['AWS', 'Matomo', 'Djangocms', 'Django', 'Python', 'Angular', 'Typescript']
     },
     {
@@ -65,7 +65,7 @@
       columns: {
         start: 1,
         span: 9,
-        '2xl': {
+        '3xl': {
           start: 1,
           span: 8,
         },
@@ -94,7 +94,7 @@
       columns: {
         start: 6,
         span: 7,
-        '2xl': {
+        '3xl': {
           start: 6,
           span: 6,
         },
@@ -118,7 +118,7 @@
       columns: {
         start: 1,
         span: 9,
-        '2xl': {
+        '3xl': {
           start: 2,
           span: 8,
         },
@@ -168,7 +168,7 @@
   <meta name="description" content="">
 </svelte:head>
 
-<div class="md:px-5 3xl:px-0 w-screen max-w-screen-3xl m-auto font-mono">
+<div class="md:px-5 3.1xl:px-0 w-screen max-w-screen-3.1xl m-auto font-mono">
   <div id="top" class="absolute top-0"></div>
   <Header />
 
