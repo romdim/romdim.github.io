@@ -59,7 +59,7 @@
   }
 </style>
 
-<div class="relative lg:transform lg:-translate-x-1/2 py-5 px-3.5 md:px-5 lg:p-7.5 font-mono z-10 max-w-full text-lg md:w-10/12 ml-3 md:m-auto lg:m-0 info">
+<div class="relative lg:transform lg:-translate-x-1/2 py-4 px-3.5 md:px-5 lg:p-7.5 font-mono z-10 max-w-full text-lg md:w-10/12 ml-3 md:m-auto lg:m-0 info">
   <div class="absolute top-0 left-1/2 w-20 h-8 md:h-10 2xl:h-13 bg-black transform -translate-x-1/2 md:-translate-y-full"></div>
 
   <input class="hidden input-employer" type="radio" name="{name}-tabs" id="{name}-employer" checked />
