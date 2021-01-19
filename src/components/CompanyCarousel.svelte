@@ -149,11 +149,6 @@
   }
 </style>
 
-<svelte:head>
-  <title>romdim B.V. | Projects</title>
-  <meta name="description" content="">
-</svelte:head>
-
 <div class="relative mr-3 md:m-auto carousel">
   {#each carousel as _, i}
     <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="{name}-{i}" name="{name}[]" checked={i==0}>
