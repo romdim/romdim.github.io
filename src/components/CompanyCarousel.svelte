@@ -7,21 +7,27 @@
   export let nameC: string = name.charAt(0).toUpperCase() + name.slice(1);
   export let carousel: CarouselItem[];
   
+  const widthBuilder = (prefix: string, width: string): string => {
+    return width ? ` ${prefix}:w-${width}` : '';
+  };
+
+  let logoWidth: string = carousel[0].width ? `w-${carousel[0].width.default}` + widthBuilder('md', carousel[0].width.md) + widthBuilder('lg', carousel[0].width.lg) + widthBuilder('xl', carousel[0].width.xl) + widthBuilder('2xl', carousel[0].width['2xl']) + widthBuilder('3xl', carousel[0].width['3xl']) + widthBuilder('3.1xl', carousel[0].width['3.1xl']) : 'w-1/2';
+  
   let list: HTMLUListElement;
   let inputs: HTMLCollectionOf<HTMLInputElement>;
 
   onMount(async () => {
     await import('tocca');
     window.tocca({
-      swipeThreshold: 10
+      swipeThreshold: 30
     });
 
-    list.addEventListener('touchmove',(e) => e.preventDefault());
-    list.addEventListener('touchstart',(e) => e.preventDefault());
-    list.addEventListener('touchend',(e) => e.preventDefault());
+    // list.addEventListener('touchmove',(e) => e.preventDefault());
+    // list.addEventListener('touchstart',(e) => e.preventDefault());
+    // list.addEventListener('touchend',(e) => e.preventDefault());
 
     inputs = list.parentElement.getElementsByTagName('input');
-    list.addEventListener('swipedown', () => {
+    list.addEventListener('swiperight', () => {
       let i:number = 0;
       while(!inputs[i].checked) {
         i++;
@@ -30,7 +36,7 @@
       let previous:number = i == 0 ? carousel.length-1 : i-1;
       inputs[previous].checked = true;
     });
-    list.addEventListener('swipeup', () => {
+    list.addEventListener('swipeleft', () => {
       let i:number = 0;
       while(!inputs[i].checked) {
         i++;
@@ -158,7 +164,7 @@
       <li  class="{item.type === 'logo' ? 'relative' : ''} opacity-0 z-auto transition-opacity duration-1000">
         {#if item.type === 'logo'}
           <div class="aspect-w-16 aspect-h-9 bg-{name} {item.border ? `border border-solid border-${name}-secondary` : ''}"></div>
-          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 md:w-{item.width} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
+          <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 {logoWidth} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
         {:else if item.type === 'video'}
           <video width="100%" controls muted="true">
             <source src="img/companies/{nameC}/{nameC}.mp4" type="video/mp4">
@@ -171,15 +177,15 @@
     {/each}
   </ul>
 
-  <div class="z-10 absolute top-1/2 -right-2 md:-right-2.5 lg:right-0 transform -translate-y-1/2 nav">
+  <div class="z-10 absolute top-0 right-1/2 lg:top-1/2 lg:right-0 transform translate-x-1/2 lg:translate-x-0 lg:-translate-y-1/2 nav">
     <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 previous hidden lg:block">
       {#each carousel as _, i}
         <label class="absolute top-0 right-0 opacity-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
       {/each}
     </div>
-    <div class="w-4 md:w-5 lg:w-7.5 3xl:w-10 lg:-my-2.5 dots">
+    <div class="h-4 md:h-5 lg:h-auto lg:w-7.5 3xl:w-10 -my-1 md:my-1.5 lg:-my-2.5 dots">
       {#each carousel as _, i}
-        <label class="block w-4 md:w-5 lg:w-4 h-4 md:h-5 lg:h-4 bg-dot bg-no-repeat bg-cover cursor-pointer my-5 lg:my-2.5 md:mx-auto" for="{name}-{i}"></label>
+        <label class="inline-block lg:block w-2.5 md:w-4 lg:w-4 h-2.5 md:h-4 lg:h-4 bg-dot bg-no-repeat bg-cover cursor-pointer mx-0.5 md:mx-2 lg:my-2.5" for="{name}-{i}"></label>
       {/each}
     </div>
     <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 next hidden lg:block">

@@ -15,7 +15,10 @@
       carousel: [
         {
           type: 'logo',
-          width: '1/3',
+          width: {
+            default: '1/2',
+            md: '1/3',
+          },
         },
         {
           type: 'video',
@@ -46,7 +49,9 @@
       carousel: [
         {
           type: 'logo',
-          width: '1/2',
+          width: {
+            default: '1/2',
+          },
         },
         {
           type: 'image',
@@ -73,7 +78,10 @@
       carousel: [
         {
           type: 'logo',
-          width: '1/3',
+          width: {
+            default: '1/2',
+            md: '1/3',
+          },
         },
         {
           type: 'image',
@@ -102,7 +110,9 @@
       carousel: [
         {
           type: 'logo',
-          width: '1/2',
+          width: {
+            default: '1/2',
+          },
         },
         {
           type: 'image',
@@ -126,7 +136,10 @@
       carousel: [
         {
           type: 'logo',
-          width: '1/4',
+          width: {
+            default: '1/3',
+            md: '1/4',
+          },
           format: 'png',
           border: true,
         },
@@ -165,6 +178,7 @@
 
 <svelte:head>
   <title>romdim B.V. | Projects</title>
+  <!-- TODO Description -->
   <meta name="description" content="">
 </svelte:head>
 

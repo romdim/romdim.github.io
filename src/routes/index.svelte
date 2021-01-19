@@ -1,4 +1,5 @@
 <script>
+  // TODO Use SVG Components
   // import Contact from "../images/contact.svg";
   // import HandRight from "../images/hand-right.svg";
   // import Logo from "../images/logo.svg";
@@ -23,7 +24,6 @@
     .box {
       height: 100vh;
       width: 100%;
-      /* max-width: 2000px; */
     }
   }
   
@@ -108,6 +108,7 @@
 
 <svelte:head>
   <title>romdim B.V.</title>
+  <!-- TODO Description -->
   <meta name="description" content="">
 </svelte:head>
 
@@ -131,15 +132,12 @@
 
     <!-- Description -->
     <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 lg:w-37% xl:w-30% lg:bottom-1/4 lg:left-3/4 lg:translate-y-1/2 text-size-responsive text-center lg:text-right text-black">
-      <!-- flex items-center -->
-      <!-- <div class="lg:mx-auto"> -->
-        <p>Manager of One</p>
-        <p>Tech Research</p>
-        <p>Best-solution provision</p>
-        <p>Open-source contributions</p>
-        <p>Over 10 years of experience &</p>
-        <p>A keen eye for detail…</p>
-      <!-- </div> -->
+      <p>Manager of One</p>
+      <p>Tech Research</p>
+      <p>Best-solution provision</p>
+      <p>Open-source contributions</p>
+      <p>Over 10 years of experience &</p>
+      <p>A keen eye for detail…</p>
     </div>
 
     <!-- Horizontal line -->
