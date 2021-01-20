@@ -112,7 +112,7 @@
   <meta name="description" content="">
 </svelte:head>
 
-<div class="absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:grid lg:grid-cols-12 bg-white font-mono box">
+<div class="absolute inset-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:grid lg:grid-cols-12 box">
   <div class="lg:col-start-2 lg:col-span-10 box max-w-screen-3.1xl relative">
     <!-- Logo -->
     <!-- <Logo class="absolute top-0 left-1/2 transform -translate-x-1/2 w-21-vmin lg:top-1/4 lg:left-1/4 lg:-translate-y-1/2 lg:w-1/6" /> -->

@@ -21,10 +21,10 @@
   }
 </style>
 
-<footer class="mt-10 md:mt-12.5 lg:mt-20 2xl:mt-15 px-1.5 md:px-0 py-5 md:py-10 lg:py-7.5 2xl:py-10 grid grid-cols-12 bg-none font-cursive text-xxs md:text-sm 2xl:text-base">
-  <div class="relative col-span-full lg:col-start-2 lg:col-span-10 3.1xl:col-span-full">
-    <p class="pb-2.5 md:pb-5">KvK - 75633264</p>
-    <p class="pb-4 md:pb-7.5">BTW - NL860346432B01</p>
+<footer class="mt-7.5 lg:mt-10 3xl:mt-12.5 px-1.5 md:px-0 py-5 md:py-7.5 2xl:py-10 bg-none font-cursive text-xxs md:text-sm 2xl:text-base">
+  <div class="relative">
+    <p class="pb-2.5 md:pb-3">KvK - 75633264</p>
+    <p class="pb-4 md:pb-5.5">BTW - NL860346432B01</p>
     <div class="flex">
       <a href="https://github.com/romdim" target="_blank" rel="noopener noreferrer">
         <img class="h-4 md:h-5.5 lg:h-7 3.1xl:h-8.5 mr-3.5 md:mr-5 lg:mr-7.5 3.1xl:mr-10" src="img/contact/github.svg" alt="Github logo for romdim">

@@ -39,11 +39,11 @@
     {
       name: 'myTomorrows',
       columns: {
-        start: 6,
+        start: 5,
         span: 7,
         '3xl': {
-          start: 7,
-          span: 6,
+          start: 6,
+          span: 7,
         },
       },
       carousel: [
@@ -100,7 +100,7 @@
     {
       name: 'peoplePerHour',
       columns: {
-        start: 6,
+        start: 5,
         span: 7,
         '3xl': {
           start: 6,
@@ -126,7 +126,7 @@
       name: 'epu',
       nameC: 'EPU',
       columns: {
-        start: 1,
+        start: 2,
         span: 9,
         '3xl': {
           start: 2,
@@ -182,17 +182,15 @@
   <meta name="description" content="">
 </svelte:head>
 
-<div class="md:px-5 3.1xl:px-0 w-screen max-w-screen-3.1xl m-auto font-mono">
-  <div id="top" class="absolute top-0"></div>
-  <Header />
+<div id="top" class="absolute top-0"></div>
+<Header />
 
-  <section>
-    <div class="grid grid-cols-12">
-      {#each companies as company}
-        <Company {company} />
-      {/each}
-    </div>
-  </section>
+<section>
+  <div class="grid grid-cols-12">
+    {#each companies as company}
+      <Company {company} />
+    {/each}
+  </div>
+</section>
 
-  <Footer page="projects"/>
-</div>
+<Footer page="projects"/>

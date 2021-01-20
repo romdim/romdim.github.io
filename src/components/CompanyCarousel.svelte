@@ -154,7 +154,7 @@
     <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="{name}-{i}" name="{name}[]" checked={i==0}>
   {/each}
 
-  <ul bind:this={list} class="relative m-0 p-0 list-none aspect-w-16 aspect-h-9">
+  <ul bind:this={list} class="relative m-0 p-0 aspect-w-16 aspect-h-9 list-none">
     {#each carousel as item}
       <li  class="{item.type === 'logo' ? 'relative' : ''} opacity-0 z-auto transition-opacity duration-1000">
         {#if item.type === 'logo'}
@@ -180,7 +180,7 @@
     </div>
     <div class="h-4 md:h-5 lg:h-auto lg:w-7.5 3xl:w-10 -my-1 md:my-1.5 lg:-my-2.5 dots">
       {#each carousel as _, i}
-        <label class="inline-block lg:block w-2.5 md:w-4 lg:w-4 h-2.5 md:h-4 lg:h-4 bg-dot bg-no-repeat bg-cover cursor-pointer mx-0.5 md:mx-2 lg:my-2.5" for="{name}-{i}"></label>
+        <label class="inline-block lg:block w-2.5 md:w-4 lg:w-4 3xl:w-5 h-2.5 md:h-4 lg:h-4 3xl:h-5 bg-dot bg-no-repeat bg-cover cursor-pointer mx-0.5 md:mx-2 lg:mx-auto lg:my-2.5 3xl:my-3.5" for="{name}-{i}"></label>
       {/each}
     </div>
     <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 next hidden lg:block">
