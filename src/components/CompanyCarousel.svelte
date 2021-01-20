@@ -49,10 +49,6 @@
 </script>
 
 <style>
-  %visible {
-    opacity: 1;
-    z-index: 10;
-  }
   /* Carousel */
   @mixin carousel($items) {
     .carousel > input {
@@ -61,7 +57,8 @@
           &:checked {
             ~ ul li {
               &:nth-child(#{$i}) {
-                @extend %visible;
+                opacity: 1;
+                z-index: 10;
               }
             }
   
@@ -70,11 +67,11 @@
                 label {
                   @if $i == 1 {
                     &:nth-child(#{$items}) {
-                      @extend %visible;
+                      z-index: 10;
                     }
                   } @else {
                     &:nth-child(#{$i - 1}) {
-                      @extend %visible;
+                      z-index: 10;
                     }
                   }
                 }
@@ -84,11 +81,11 @@
                 label {
                   @if $i == $items {
                     &:nth-child(1) {
-                      @extend %visible;
+                      z-index: 10;
                     }
                   } @else {
                     &:nth-child(#{$i + 1}) {
-                      @extend %visible;
+                      z-index: 10;
                     }
                   }
                 }
@@ -156,7 +153,7 @@
 
   <ul bind:this={list} class="relative m-0 p-0 aspect-w-16 aspect-h-9 list-none">
     {#each carousel as item}
-      <li  class="{item.type === 'logo' ? 'relative' : ''} opacity-0 z-auto transition-opacity duration-1000">
+      <li class="{item.type === 'logo' ? 'relative ' : ''}opacity-0 z-auto transition-opacity duration-1000">
         {#if item.type === 'logo'}
           <div class="aspect-w-16 aspect-h-9 bg-{name} {item.border ? `border border-solid border-${name}-secondary` : ''}"></div>
           <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 {logoWidth} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
@@ -175,7 +172,7 @@
   <div class="z-10 absolute top-0 right-1/2 lg:top-1/2 lg:right-0 transform translate-x-1/2 lg:translate-x-0 lg:-translate-y-1/2 nav">
     <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 previous hidden lg:block">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 opacity-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
       {/each}
     </div>
     <div class="h-4 md:h-5 lg:h-auto lg:w-7.5 3xl:w-10 -my-1 md:my-1.5 lg:-my-2.5 dots">
@@ -185,7 +182,7 @@
     </div>
     <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 next hidden lg:block">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 opacity-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-down" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-down" for="{name}-{i}"></label>
       {/each}
     </div>
   </div>
