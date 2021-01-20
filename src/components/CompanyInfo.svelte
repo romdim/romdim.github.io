@@ -59,21 +59,21 @@
   }
 </style>
 
-<div class="relative lg:transform lg:-translate-x-1/2 py-4 px-3.5 md:px-5 lg:p-7.5 font-mono z-10 max-w-full text-lg md:w-10/12 ml-3 md:m-auto lg:m-0 info">
-  <div class="absolute top-0 left-1/2 w-20 h-8 md:h-10 2xl:h-13 bg-black transform -translate-x-1/2 md:-translate-y-full"></div>
+<div class="relative lg:transform lg:-translate-x-1/2 z-10 ml-3 md:m-auto lg:m-0 py-4 px-3.5 md:px-5 lg:p-7.5 md:w-10/12 max-w-full font-mono text-lg info">
+  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 md:-translate-y-full bg-black w-20 h-8 md:h-10 2xl:h-13"></div>
 
   <input class="hidden input-employer" type="radio" name="{name}-tabs" id="{name}-employer" checked />
-  <label class="absolute top-0 left-1/2 w-1/2 md:w-32 2xl:w-40 h-8 md:h-10 2xl:h-13 py-1 px-3 bg-black text-white text-sm md:text-lg 2xl:text-xl md:rounded-tl-2.5xl rounded-tr-2.5xl transform -translate-x-full md:-translate-y-full flex items-center justify-center" for="{name}-employer">Employer</label>
+  <label class="absolute top-0 left-1/2 flex items-center justify-center transform -translate-x-full md:-translate-y-full md:rounded-tl-2.5xl rounded-tr-2.5xl bg-black px-3 py-1 w-1/2 md:w-32 2xl:w-40 h-8 md:h-10 2xl:h-13 text-white text-sm md:text-lg 2xl:text-xl" for="{name}-employer">Employer</label>
 
   <input class="hidden input-role" type="radio" name="{name}-tabs" id="{name}-role" />
-  <label class="absolute top-0 left-1/2 w-1/2 md:w-32 2xl:w-40 h-8 md:h-10 2xl:h-13 py-1 px-3 bg-black text-white text-sm md:text-lg 2xl:text-xl md:rounded-tr-2.5xl rounded-tl-2.5xl transform md:-translate-y-full flex items-center justify-center" for="{name}-role">Role</label>
+  <label class="absolute top-0 left-1/2 flex items-center justify-center transform md:-translate-y-full md:rounded-tr-2.5xl rounded-tl-2.5xl bg-black px-3 py-1 w-1/2 md:w-32 2xl:w-40 h-8 md:h-10 2xl:h-13 text-white text-sm md:text-lg 2xl:text-xl" for="{name}-role">Role</label>
 
-  <div class="hidden tab-employer mt-8 md:mt-0">
-    <p class="whitespace-pre-line text-justify text-xs md:text-base 2xl:text-lg">{employerText}</p>
+  <div class="hidden mt-8 md:mt-0 tab-employer">
+    <p class="text-justify whitespace-pre-line text-xs md:text-base 2xl:text-lg">{employerText}</p>
     <Tools tools={tools} />
   </div>
-  <div class="hidden tab-role mt-8 md:mt-0">
-    <p class="whitespace-pre-line text-justify text-xs md:text-base 2xl:text-lg">{roleText}</p>
+  <div class="hidden mt-8 md:mt-0 tab-role">
+    <p class="text-justify whitespace-pre-line text-xs md:text-base 2xl:text-lg">{roleText}</p>
     <Tools tools={tools} />
   </div>
 </div>

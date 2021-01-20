@@ -153,7 +153,7 @@
 
   <ul bind:this={list} class="relative m-0 p-0 aspect-w-16 aspect-h-9 list-none">
     {#each carousel as item}
-      <li class="{item.type === 'logo' ? 'relative ' : ''}opacity-0 z-auto transition-opacity duration-1000">
+      <li class="{item.type === 'logo' ? 'relative ' : ''}transition-opacity duration-1000 opacity-0 z-auto">
         {#if item.type === 'logo'}
           <div class="aspect-w-16 aspect-h-9 bg-{name} {item.border ? `border border-solid border-${name}-secondary` : ''}"></div>
           <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 {logoWidth} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
@@ -169,20 +169,20 @@
     {/each}
   </ul>
 
-  <div class="z-10 absolute top-0 right-1/2 lg:top-1/2 lg:right-0 transform translate-x-1/2 lg:translate-x-0 lg:-translate-y-1/2 nav">
-    <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 previous hidden lg:block">
+  <div class="absolute top-0 lg:top-1/2 right-1/2 lg:right-0 transform translate-x-1/2 lg:translate-x-0 lg:-translate-y-1/2 z-10 nav">
+    <div class="hidden lg:block relative w-7.5 3xl:w-10 h-7.5 3xl:h-10 previous">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-up" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 z-auto bg-cover bg-no-repeat bg-chevron-up cursor-pointer w-7.5 3xl:w-10 h-7.5 3xl:h-10" for="{name}-{i}"></label>
       {/each}
     </div>
-    <div class="h-4 md:h-5 lg:h-auto lg:w-7.5 3xl:w-10 -my-1 md:my-1.5 lg:-my-2.5 dots">
+    <div class="lg:w-7.5 3xl:w-10 h-4 md:h-5 lg:h-auto -my-1 md:my-1.5 lg:-my-2.5 dots">
       {#each carousel as _, i}
-        <label class="inline-block lg:block w-2.5 md:w-4 lg:w-4 3xl:w-5 h-2.5 md:h-4 lg:h-4 3xl:h-5 bg-dot bg-no-repeat bg-cover cursor-pointer mx-0.5 md:mx-2 lg:mx-auto lg:my-2.5 3xl:my-3.5" for="{name}-{i}"></label>
+        <label class="inline-block lg:block lg:my-2.5 3xl:my-3.5 mx-0.5 md:mx-2 lg:mx-auto bg-dot bg-no-repeat bg-cover cursor-pointer w-2.5 md:w-4 3xl:w-5 h-2.5 md:h-4 3xl:h-5" for="{name}-{i}"></label>
       {/each}
     </div>
-    <div class="relative w-7.5 h-7.5 3xl:w-10 3xl:h-10 next hidden lg:block">
+    <div class="hidden lg:block relative w-7.5 3xl:w-10 h-7.5 3xl:h-10 next">
       {#each carousel as _, i}
-        <label class="absolute top-0 right-0 z-auto w-7.5 h-7.5 3xl:w-10 3xl:h-10 cursor-pointer bg-cover bg-no-repeat bg-chevron-down" for="{name}-{i}"></label>
+        <label class="absolute top-0 right-0 z-auto bg-cover bg-no-repeat bg-chevron-down cursor-pointer w-7.5 3xl:w-10 h-7.5 3xl:h-10" for="{name}-{i}"></label>
       {/each}
     </div>
   </div>

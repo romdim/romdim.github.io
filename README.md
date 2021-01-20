@@ -11,3 +11,5 @@ Technologies used:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Typescript](http://www.typescriptlang.org/)
 - [Tocca.js](https://github.com/GianlucaGuarini/Tocca.js)
+
+Following the [Concentric CSS](https://rhodesmill.org/brandon/2011/concentric-css/)
