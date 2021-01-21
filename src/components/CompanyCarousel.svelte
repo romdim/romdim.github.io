@@ -158,7 +158,7 @@
           <div class="aspect-w-16 aspect-h-9 bg-{name} {item.border ? `border border-solid border-${name}-secondary` : ''}"></div>
           <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 {logoWidth} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
         {:else if item.type === 'video'}
-          <video width="100%" controls muted="true">
+          <video width="100%" controls muted={true}>
             <source src="img/companies/{nameC}/{nameC}.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
