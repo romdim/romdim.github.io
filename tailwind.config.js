@@ -27,7 +27,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ['Roboto Mono', ...defaultTheme.fontFamily.mono],
-        cursive: ['Comfortaa', 'cursive'],
+        sans: ['Comfortaa', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         'xxs': '0.625rem',
