@@ -177,9 +177,7 @@
 </style>
 
 <svelte:head>
-  <title>romdim B.V. | Projects</title>
-  <!-- TODO Description -->
-  <meta name="description" content="">
+  <title>Projects | romdim B.V.</title>
 </svelte:head>
 
 <div id="top" class="absolute top-0"></div>

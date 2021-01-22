@@ -108,8 +108,6 @@
 
 <svelte:head>
   <title>romdim B.V.</title>
-  <!-- TODO Description -->
-  <meta name="description" content="">
 </svelte:head>
 
 <div class="absolute inset-1/2 lg:grid lg:grid-cols-12 transform -translate-x-1/2 -translate-y-1/2 box">
