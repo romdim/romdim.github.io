@@ -47,6 +47,7 @@
     "sass": "^1.30.0",
     "svelte": "^3.24.0",
     "svelte-preprocess": "^4.0.9",
+    "svelte-progressive-image": "^1.0.0",
     "tailwindcss": "^2.0.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"

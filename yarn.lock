@@ -3623,6 +3623,11 @@ svelte-preprocess@^4.0.9:
     detect-indent "^6.0.0"
     strip-indent "^3.0.0"
 
+svelte-progressive-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/svelte-progressive-image/-/svelte-progressive-image-1.0.0.tgz#9db0129dd1d1b658fa07e4420296fdb987ac2eaa"
+  integrity sha512-EXd2FIf2f7ln0oYyGYuwl/KYdcG5PwqN4L/tcp1tvT4xkOaqCPir0zwjnLSk1FhC8xtiwFKt6IbLWV7MrBulWQ==
+
 svelte@^3.24.0:
   version "3.31.0"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.31.0.tgz#13966e5f55b975bc86675469bb2c58dd0e558d97"
