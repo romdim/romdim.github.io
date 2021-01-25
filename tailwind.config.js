@@ -27,6 +27,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ['Roboto Mono', ...defaultTheme.fontFamily.mono],
+        // TODO Use another sans as first fallback (Roboto maybe?)
         sans: ['Comfortaa', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
