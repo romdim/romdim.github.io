@@ -177,9 +177,9 @@
 
   <ul bind:this={list} class="relative m-0 p-0 aspect-w-16 aspect-h-9 list-none">
     {#each carousel as item}
-      <li class="{item.type === 'logo' ? 'relative ' : ''}transition-opacity duration-1000 opacity-0 z-auto">
+      <li class="{item.type === 'logo' ? 'relative ' : ''} transition-opacity duration-1000 opacity-0 z-auto">
         {#if item.type === 'logo'}
-          <div class="aspect-w-16 aspect-h-9 bg-{name} {item.border ? `border border-solid border-${name}-secondary` : ''}"></div>
+          <div class="aspect-w-16 aspect-h-9 bg-{name}{item.border ? ` border border-solid border-${name}-secondary` : ''}"></div>
           <!-- TODO Alt -->
           <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 {logoWidth} h-auto" src="img/companies/{nameC}/{nameC}.{item.format ? item.format : 'svg'}" alt="">
         {:else if item.type === 'video'}

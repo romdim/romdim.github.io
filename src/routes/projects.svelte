@@ -5,6 +5,13 @@
 
   import type CompanyType from '../../typings/Components/Company';
 
+  // Purgecss classes that are dynamically created and need to be parsed for production non-purging:
+  // lg:col-start-1 lg:col-start-2 lg:col-start-5 3xl:col-start-1 3xl:col-start-2 3xl:col-start-6
+  // lg:col-span-7 lg:col-span-9 lg:col-span-10 3xl:col-span-6 3xl:col-span-7 3xl:col-span-8
+  // company-artwishlist company-myTomorrows company-mobiquity company-peoplePerHour company-epu
+  // bg-artwishlist bg-myTomorrows bg-mobiquity bg-peoplePerHour bg-epu border-epu-secondary
+  // w-1/3 w-1/2 md:w-1/4 md:w-1/3
+
   const companies: CompanyType[] = [
     {
       name: 'artwishlist',

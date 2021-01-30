@@ -54,6 +54,7 @@
 
   @media (min-width: 768px) {
     .info {
+      /* box-shadow: 0px 1px 4px 1px #e7e7e7; */
       box-shadow: 2px 2px 4px 1px #e7e7e7;
     }
   }
