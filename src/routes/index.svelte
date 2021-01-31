@@ -77,22 +77,34 @@
     }
   }
   
-  .hl-animation {
-    animation: hl-animation 2s linear;
+  .dl-animation {
+    animation: dl-animation 2s linear 0s forwards;
   }
   
+  @keyframes dl-animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100vmin;
+    }
+  }
+
+  .hl-animation {
+    animation: hl-animation 2s linear 0s forwards;
+  }
+
   @keyframes hl-animation {
     0% {
       width: 0%;
     }
-  
     100% {
       width: 100%;
     }
   }
   
   .vl-animation {
-    animation: vl-animation 2s linear;
+    animation: vl-animation 2s linear 0s forwards;
   }
   
   @keyframes vl-animation {
@@ -139,12 +151,12 @@
     </div>
 
     <!-- Horizontal line -->
-    <div class="hidden lg:block absolute top-1/2 transform -translate-y-1/2 bg-black w-full h-0.5 hl-animation"></div> 
+    <div class="hidden lg:block absolute top-1/2 transform -translate-y-1/2 bg-black h-0.5 hl-animation"></div> 
     <!-- Vertical line -->
-    <div class="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 bg-black w-0.5 h-screen vl-animation"></div>
+    <div class="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 bg-black w-0.5 vl-animation"></div>
 
     <!-- Diagonal lines -->
-    <div class="block lg:hidden absolute inset-1/2 transform origin-center rotate-45 -translate-x-1/2 bg-black w-screen-min h-px hl-animation"></div>
-    <div class="block lg:hidden absolute inset-1/2 transform origin-center -rotate-45 -translate-x-1/2 bg-black w-screen-min h-px hl-animation"></div>
+    <div class="block lg:hidden absolute inset-1/2 transform origin-center rotate-45 -translate-x-1/2 bg-black h-px dl-animation"></div>
+    <div class="block lg:hidden absolute inset-1/2 transform origin-center -rotate-45 -translate-x-1/2 bg-black h-px dl-animation"></div>
   </div>
 </div>
