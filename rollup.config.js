@@ -40,7 +40,7 @@ module.exports = {
       }),
       commonjs(),
       typescript(),
-      svelteSVG({ dev }), 
+      svelteSVG(),
 
       legacy &&
         babel({
@@ -90,7 +90,6 @@ module.exports = {
         "process.browser": false,
         "process.env.NODE_ENV": JSON.stringify(mode),
       }),
-      svelteSVG({ generate: "ssr", dev }),
       svelte({
         ...svelteOptions,
         generate: "ssr",
@@ -98,6 +97,7 @@ module.exports = {
       resolve(),
       commonjs(),
       typescript(),
+      svelteSVG({ generate: "ssr" }),
     ],
     external: Object.keys(pkg.dependencies).concat(
       require("module").builtinModules ||
