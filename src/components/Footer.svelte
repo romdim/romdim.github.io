@@ -26,13 +26,13 @@
     <p class="pb-2.5 md:pb-3">KvK - 75633264</p>
     <p class="pb-4 md:pb-5.5">BTW - NL860346432B01</p>
     <div class="flex">
-      <a href="https://github.com/romdim" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/romdim" target="_blank" rel="noreferrer">
         <img class="mr-3.5 md:mr-5 lg:mr-7.5 3.1xl:mr-10 h-4 md:h-5.5 lg:h-7 3.1xl:h-8.5" src="img/contact/github.svg" alt="Github logo for romdim">
       </a>
-      <a href="https://linkedin.com/in/romdim" target="_blank" rel="noopener noreferrer">
+      <a href="https://linkedin.com/in/romdim" target="_blank" rel="noreferrer">
         <img class="mr-3.5 md:mr-5 lg:mr-7.5 3.1xl:mr-10 h-4 md:h-5.5 lg:h-7 3.1xl:h-8.5" src="img/contact/linkedin.svg" alt="LinkedIn logo for romdim">
       </a>
-      <a href="mailto:rom-dim@hotmail.com?subject=Coming%20from%20site" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:rom-dim@hotmail.com?subject=Coming%20from%20site" target="_blank" rel="noreferrer">
         <img class="mr-3.5 md:mr-5 lg:mr-7.5 3.1xl:mr-10 h-4 md:h-5.5 lg:h-7 3.1xl:h-8.5" src="img/contact/mail.svg" alt="romdim e-mail">
       </a>
       <a href="{page}#top" class="absolute right-0 bottom-0 transform origin-center -translate-y-1/3 -scale-y-100 -rotate-90 w-10 md:w-15 lg:w-20 group hand-up" aria-label="Scroll to Top">
