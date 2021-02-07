@@ -7,15 +7,6 @@
     --tw-scale-y: -1;
   }
 
-  .hand-up,
-  .hand-up:active {
-    -webkit-filter: drop-shadow(-2px -2px 1px #9b9b9b);
-    filter: drop-shadow(-2px -2px 1px #9b9b9b);
-  }
-  .hand-up:hover {
-    -webkit-filter: none;
-    filter: none;
-  }
   .hand-up:active .active-text-black {
     color: black;
   }

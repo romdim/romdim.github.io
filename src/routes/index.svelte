@@ -25,15 +25,6 @@
     }
   }
   
-  .hand-right,
-  .hand-right:active {
-    -webkit-filter: drop-shadow(2px 2px 1px #9b9b9b);
-    filter: drop-shadow(2px 2px 1px #9b9b9b);
-  }
-  .hand-right:hover {
-    -webkit-filter: none;
-    filter: none;
-  }
   .hand-right:active .active-text-black {
     color: black;
   }
