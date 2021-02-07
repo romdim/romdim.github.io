@@ -142,8 +142,8 @@
       <p>Tech Research</p>
       <p>Best-solution provision</p>
       <p>Open-source contributions</p>
-      <p>Over 10 years of experience &</p>
-      <p>A keen eye for detail…</p>
+      <p>Over 10 years of experience</p>
+      <p>A keen eye for detail</p>
     </div>
 
     <!-- Horizontal line -->
