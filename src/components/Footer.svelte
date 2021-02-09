@@ -12,7 +12,7 @@
   }
 </style>
 
-<footer class="mt-7.5 lg:mt-10 3xl:mt-12.5 px-1.5 md:px-0 py-5 md:py-7.5 2xl:py-10 font-sans text-xxs md:text-sm 2xl:text-base">
+<footer class="mt-7.5 lg:mt-10 3xl:mt-12.5 px-1.5 md:px-0 py-5 md:py-7.5 2xl:py-10 font-medium font-sans text-xxs md:text-sm 2xl:text-base">
   <div class="relative">
     <p class="pb-2.5 md:pb-3">KvK - 75633264</p>
     <p class="pb-4 md:pb-5.5">BTW - NL860346432B01</p>
