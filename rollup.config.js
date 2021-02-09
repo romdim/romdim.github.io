@@ -1,5 +1,4 @@
 import resolve from "@rollup/plugin-node-resolve";
-// import aliasFactory from '@rollup/plugin-alias'
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import svelte from "rollup-plugin-svelte";
@@ -12,17 +11,16 @@ import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 
 const svelteOptions = require("./svelte.config.js");
-const path = require("path").resolve(__dirname, "src");
-
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const onwarn = (warning, onwarn) =>
-  (warning.code === "CIRCULAR_DEPENDENCY" &&
-    /[/\\]@sapper[/\\]/.test(warning.message)) ||
-  onwarn(warning);
+	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
+	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
+	(warning.code === 'THIS_IS_UNDEFINED') ||
+	onwarn(warning);
 
 module.exports = {
   client: {
