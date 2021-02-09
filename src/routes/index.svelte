@@ -30,8 +30,8 @@
   }
 
   .text-size-responsive {
-    font-size: 2vmin;
-    line-height: 2.25;
+    font-size: 2.22vmin;
+    line-height: 2;
     /*
       Removing empty space due to last paragraph's line-height:
       -1 * (line-height - 1) * 0.5em => -1.25vmin
