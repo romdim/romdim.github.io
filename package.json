@@ -11,8 +11,8 @@
     "export": "yarn run build:tailwind && sapper export docs --legacy",
     "start": "node __sapper__/build",
     "sapper-dev": "sapper dev",
-    "watch:tailwind": "postcss src/tailwind.css -o static/index.css -w",
-    "build:tailwind": "NODE_ENV=production postcss src/tailwind.css -o static/index.css"
+    "watch:tailwind": "./node_modules/postcss-cli/bin/postcss src/tailwind.css -o static/index.css -w",
+    "build:tailwind": "NODE_ENV=production ./node_modules/postcss-cli/bin/postcss src/tailwind.css -o static/index.css"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
