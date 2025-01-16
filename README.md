@@ -2,7 +2,7 @@
 
 Romdim B.V. is a limited company based in the Netherlands, acting as an eenmanszaak (sole proprietor) for me (Romanos Tsouroplis).
 
-Designed by [Efi Petrou](https://www.linkedin.com/in/efipetrou/) 
+Designed by [Efi Petrou](https://www.linkedin.com/in/efipetrou/)
 
 Technologies used:
 
