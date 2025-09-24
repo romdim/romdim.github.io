@@ -149,6 +149,10 @@
   }
   
   /* Company */
+  .company-mediahuis {
+    @include carousel(3);
+  }
+  
   .company-artwishlist {
     @include carousel(4);
   }
@@ -172,10 +176,10 @@
 
 <div class="relative mr-3 md:m-auto carousel">
   {#each carousel as _, i}
-    <input class="absolute top-0 left-0 opacity-0 z-auto" type="radio" id="{name}-{i}" name="{name}[]" checked={i==0}>
+    <input class="absolute top-0 left-0 z-auto opacity-0" type="radio" id="{name}-{i}" name="{name}[]" checked={i==0}>
   {/each}
 
-  <ul bind:this={list} class="relative m-0 p-0 aspect-w-16 aspect-h-9 list-none">
+  <ul bind:this={list} class="relative p-0 m-0 list-none aspect-w-16 aspect-h-9">
     {#each carousel as item}
       <li class="{item.type === 'logo' ? 'relative ' : ''} transition-opacity duration-1000 opacity-0 z-auto">
         {#if item.type === 'logo'}
@@ -202,7 +206,7 @@
     {/each}
   </ul>
 
-  <div class="absolute top-0 lg:top-1/2 right-1/2 lg:right-0 transform translate-x-1/2 lg:translate-x-0 lg:-translate-y-1/2 z-10 nav">
+  <div class="absolute top-0 z-10 transform translate-x-1/2 lg:top-1/2 right-1/2 lg:right-0 lg:translate-x-0 lg:-translate-y-1/2 nav">
     <div class="hidden lg:block relative w-7.5 3xl:w-10 h-7.5 3xl:h-10 previous">
       {#each carousel as _, i}
         <label class="absolute top-0 right-0 z-auto bg-cover bg-no-repeat bg-chevron-up cursor-pointer w-7.5 3xl:w-10 h-7.5 3xl:h-10" for="{name}-{i}"></label>

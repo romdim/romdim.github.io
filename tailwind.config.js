@@ -18,6 +18,7 @@ module.exports = {
         '2.5xl': '1.25rem',
       },
       colors: {
+        'mediahuis': '#FFFFFF',
         'artwishlist': '#F5F5F5',
         'myTomorrows': '#2AA56A',
         'mobiquity': '#00AFEF',
