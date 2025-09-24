@@ -111,19 +111,19 @@
   <title>romdim B.V.</title>
 </svelte:head>
 
-<div class="absolute inset-1/2 lg:grid lg:grid-cols-12 transform -translate-x-1/2 -translate-y-1/2 box">
+<div class="absolute transform -translate-x-1/2 -translate-y-1/2 inset-1/2 lg:grid lg:grid-cols-12 box">
   <div class="relative lg:col-start-2 lg:col-span-10 3.1xl:m-auto max-w-screen-3.1xl box">
     <!-- Logo -->
     <Logo class="absolute top-0 lg:top-1/4 left-1/2 lg:left-1/4 transform -translate-x-1/2 lg:-translate-y-1/2 w-21-vmin lg:w-18% 2xl:w-19% 3.1xl:w-14%" />
 
     <!-- Projects Hand  -->
-    <a class="absolute top-1/2 lg:top-0 right-0 flex items-center lg:w-1/2 lg:h-1/2 group hand-right" aria-label="Projects Page" href="projects">
+    <a class="absolute right-0 flex items-center top-1/2 lg:top-0 lg:w-1/2 lg:h-1/2 group hand-right" aria-label="Projects Page" href="projects">
       <!-- Cannot use svg file as it includes classes within -->
-      <svg class="transform -translate-y-1/2 lg:translate-y-0 lg:m-auto w-13-vmin lg:w-19% 3.1xl:w-15% stroke-6 md:stroke-3 lg:stroke-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.7976 174.5396"><g transform="translate(-96.7857 -49.9167)" fill="none" stroke="#000" stroke-linecap="round"><path d="M183.7857 221.4563c-46.3919 0-84-37.729-84-84.2698 0-46.541 37.6081-84.2698 84-84.2698 31.0636 0 58.1889 16.9157 72.7226 42.066"/><path d="M146.1578 136.8582c0-22.7347 17.9938-41.1649 40.1903-41.1649 6.6187 0 12.8637 1.6387 18.3694 4.5416a39.9535 39.9535 0 013.8847 2.3398 40.6033 40.6033 0 016.1648 5.1755c3.0032 3.076 5.5333 6.6366 7.469 10.5574"/><path d="M185.2083 52.9167h185.2084c11.7263 0 21.1666 9.4403 21.1666 21.1666 0 11.7264-9.4403 21.1667-21.1666 21.1667H256.8892"/><rect width="84.6667" height="42.3333" x="222.25" y="137.5833" ry="21.1466"/><rect width="84.6667" height="41.5396" x="222.25" y="179.9167" ry="20.7698"/><rect width="84.6667" height="42.3333" x="222.25" y="95.25" ry="21.1466"/><path d="M183.7857 221.4563h64.5396"/></g><ellipse class="stroke-current text-transparent group-hover:text-black" fill="none" cx="89.509709" cy="85.153151" rx="20.613924" ry="20.785707"/><circle class="fill-current text-transparent active-text-black" cx="89.673386" cy="85.314531" r="10.491192"/></svg>
+      <svg class="transform -translate-y-1/2 lg:translate-y-0 lg:m-auto w-13-vmin lg:w-19% 3.1xl:w-15% stroke-6 md:stroke-3 lg:stroke-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.7976 174.5396"><g transform="translate(-96.7857 -49.9167)" fill="none" stroke="#000" stroke-linecap="round"><path d="M183.7857 221.4563c-46.3919 0-84-37.729-84-84.2698 0-46.541 37.6081-84.2698 84-84.2698 31.0636 0 58.1889 16.9157 72.7226 42.066"/><path d="M146.1578 136.8582c0-22.7347 17.9938-41.1649 40.1903-41.1649 6.6187 0 12.8637 1.6387 18.3694 4.5416a39.9535 39.9535 0 013.8847 2.3398 40.6033 40.6033 0 016.1648 5.1755c3.0032 3.076 5.5333 6.6366 7.469 10.5574"/><path d="M185.2083 52.9167h185.2084c11.7263 0 21.1666 9.4403 21.1666 21.1666 0 11.7264-9.4403 21.1667-21.1666 21.1667H256.8892"/><rect width="84.6667" height="42.3333" x="222.25" y="137.5833" ry="21.1466"/><rect width="84.6667" height="41.5396" x="222.25" y="179.9167" ry="20.7698"/><rect width="84.6667" height="42.3333" x="222.25" y="95.25" ry="21.1466"/><path d="M183.7857 221.4563h64.5396"/></g><ellipse class="text-transparent stroke-current group-hover:text-black" fill="none" cx="89.509709" cy="85.153151" rx="20.613924" ry="20.785707"/><circle class="text-transparent fill-current active-text-black" cx="89.673386" cy="85.314531" r="10.491192"/></svg>
     </a>
 
     <!-- Contact -->
-    <div class="absolute top-1/2 left-0 flex items-center transform -translate-y-1/2 lg:translate-y-0 w-1/2 h-1/2">
+    <div class="absolute left-0 flex items-center w-1/2 transform -translate-y-1/2 top-1/2 lg:translate-y-0 h-1/2">
       <Contact class="lg:m-auto w-19-vmin lg:w-1/4" />
     </div>
 
@@ -133,7 +133,7 @@
       <p>Tech Research</p>
       <p>Best-solution provision</p>
       <p>Open-source contributions</p>
-      <p>Over 10 years of experience</p>
+      <p>Over 15 years of experience</p>
       <p>A keen eye for detail</p>
     </div>
 
@@ -143,7 +143,7 @@
     <div class="hidden lg:block absolute top-0 left-1/2 transform -translate-x-1/2 bg-black w-0.5 vl-animation"></div>
 
     <!-- Diagonal lines -->
-    <div class="block lg:hidden absolute inset-1/2 transform origin-center rotate-45 -translate-x-1/2 bg-black h-px dl-animation"></div>
-    <div class="block lg:hidden absolute inset-1/2 transform origin-center -rotate-45 -translate-x-1/2 bg-black h-px dl-animation"></div>
+    <div class="absolute block h-px origin-center transform rotate-45 -translate-x-1/2 bg-black lg:hidden inset-1/2 dl-animation"></div>
+    <div class="absolute block h-px origin-center transform -rotate-45 -translate-x-1/2 bg-black lg:hidden inset-1/2 dl-animation"></div>
   </div>
 </div>
