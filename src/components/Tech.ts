@@ -1,0 +1,37 @@
+import type TechType from 'typings/Components/Tech';
+
+const TECH: Record<string, TechType> = {
+  angular: { name: 'Angular', url: 'https://angular.io/' },
+  aws: { name: 'AWS', url: 'https://aws.amazon.com/' },
+  backbase: { name: 'Backbase', url: 'https://backbase.com/' },
+  bootstrap: { name: 'Bootstrap', url: 'https://getbootstrap.com/' },
+  css3: { name: 'CSS3', url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
+  django: { name: 'Django', url: 'https://www.djangoproject.com/' },
+  djangocms: { name: 'django CMS', url: 'https://www.django-cms.org/' },
+  docker: { name: 'Docker', url: 'https://www.docker.com/' },
+  elasticsearch: { name: 'Elasticsearch', url: 'https://www.elastic.co/elasticsearch/' },
+  gatsby: { name: 'Gatsby', url: 'https://www.gatsbyjs.com/' },
+  github: { name: 'GitHub', url: 'https://github.com/' },
+  html5: { name: 'HTML5', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+  javascript: { name: 'JavaScript', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
+  jquery: { name: 'jQuery', url: 'https://jquery.com/' },
+  kubernetes: { name: 'Kubernetes', url: 'https://kubernetes.io/' },
+  materialDesign: { name: 'Material Design', url: 'https://material.io/' },
+  matomo: { name: 'Matomo', url: 'https://matomo.org/' },
+  mysql: { name: 'MySQL', url: 'https://www.mysql.com/' },
+  nextjs: { name: 'Next.js', url: 'https://nextjs.org/' },
+  php: { name: 'PHP', url: 'https://www.php.net/' },
+  postgresql: { name: 'PostgreSQL', url: 'https://www.postgresql.org/' },
+  python: { name: 'Python', url: 'https://www.python.org/' },
+  rails: { name: 'Rails', url: 'https://rubyonrails.org/' },
+  react: { name: 'React', url: 'https://reactjs.org/' },
+  redis: { name: 'Redis', url: 'https://redis.io/' },
+  ruby: { name: 'Ruby', url: 'https://www.ruby-lang.org/' },
+  sass: { name: 'Sass', url: 'https://sass-lang.com/' },
+  storybook: { name: 'Storybook', url: 'https://storybook.js.org/' },
+  tailwindCss: { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
+  typescript: { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+  yii2: { name: 'Yii2', url: 'https://www.yiiframework.com/' },
+};
+
+export default TECH;
