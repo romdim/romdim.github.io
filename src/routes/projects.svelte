@@ -197,7 +197,7 @@
         //   name: 'NTUA',
         // },
       ],
-        employerText: '[https://www.epu.ntua.gr/(EPU) is a scientific unit which carries out R&D services on a wide range of complex business, societal & technical issues. EPU-NTUA provisions the training of under/post-graduate engineers, runs extensive research & facilitates the authoring of scientific papers. It has partnered with major Greek, European & international organisations.',
+        employerText: '[https://www.epu.ntua.gr/](EPU) is a scientific unit which carries out R&D services on a wide range of complex business, societal & technical issues. EPU-NTUA provisions the training of under/post-graduate engineers, runs extensive research & facilitates the authoring of scientific papers. It has partnered with major Greek, European & international organisations.',
       roleText: 'In the position of Researcher & Engineer I started a PhD & published papers regarding the API interconnectivity through a specification. Worked for the public sector in Greece & EU programmes alongside European universities & large companies, under tight deadlines.',
       tools: ['Docker', 'Mysql', 'Django', 'Python', 'Yii2', 'PHP', 'Javascript', 'MaterialDS', 'Bootstrap']
     },
